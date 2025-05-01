@@ -2,7 +2,7 @@
 Hao's Special Works Now Available in GTA 5 Story Mode!
 Upgrade your vehicles at Hao’s workshop inside the LS Car Meet, where you can install exclusive modifications and liveries not found in regular Los Santos Customs.
 
-This mod enables access to the LS Car Meet in story mode, featuring 26 randomly selected cars that support HSW upgrades. Inside, you’ll find Hao’s custom workshop where you can apply any available tuning, including the exclusive HSW upgrades. The selection of cars changes each time you enter or exit the Car Meet, so if you see something you like, don’t wait—grab it right away.
+This mod enables access to the LS Car Meet in story mode, featuring 24 randomly selected cars that support HSW upgrades. Inside, you’ll find Hao’s custom workshop where you can apply any available tuning, including the exclusive HSW upgrades. The selection of cars changes each time you enter or exit the Car Meet, so if you see something you like, don’t wait—grab it right away.
 
 There are always two vehicles at the Car Meet already fitted with HSW enhancements. For all other cars, installing HSW tuning costs $145,000, but all other upgrade options are free.
 
