@@ -1,4 +1,4 @@
-# Hao-s-Special-Works-in-SP
+# Hao's Special Works in SP
 Hao's Special Works Now Available in GTA 5 Story Mode!
 Upgrade your vehicles at Hao’s workshop inside the LS Car Meet, where you can install exclusive modifications and liveries not found in regular Los Santos Customs.
 
