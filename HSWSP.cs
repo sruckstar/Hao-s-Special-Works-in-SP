@@ -437,7 +437,8 @@ public class HSWSP : Script
         }
         else
         {
-            int mods = Function.Call<int>(Hash.GET_NUM_VEHICLE_MODS, vehicle, 48) - 3;
+            int totalLiveries = Function.Call<int>(Hash.GET_NUM_VEHICLE_MODS, vehicle, 48);
+            int mods = Math.Max(0, totalLiveries - 3);
             Random rnd = new Random();
             Function.Call(Hash.SET_VEHICLE_MOD, vehicle, 48, rnd.Next(0, mods + 1), 0);
         }
