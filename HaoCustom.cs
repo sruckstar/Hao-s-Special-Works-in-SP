@@ -141,6 +141,13 @@ public class HaoCustom : Script
             "Lightbar"                // 49
         };
 
+        private Dictionary<int, List<int>> vehicleModOrders = new Dictionary<int, List<int>>
+        {
+            [new Model("banshee3").Hash] = new List<int> { 36, 16, 12, 1, 2, 11, 4, 6, 7, 14, 44, 48, 8, 35, 10, 0, 5, 15, 13, 9, 18, 23 },
+            [new Model("stingertt").Hash] = new List<int> { 16, 5, 12, 1, 2, 11, 4, 6, 7, 44, 48, 9, 3, 8, 0, 5, 15, 13, 18, 23 },
+            [new Model("niobe").Hash] = new List<int> { 36, 5, 16, 12, 1, 2, 11, 4, 6, 7, 14, 48, 9, 10, 3, 0, 15, 13, 18, 23 },
+        };
+
     public HaoCustom()
     {
         HSW_VEHMOD = Game.GetLocalizedString("HSW_VEHMOD");
@@ -329,12 +336,10 @@ public class HaoCustom : Script
     private NativeMenu BuildComponentsMenu(Vehicle veh)
     {
         SaveOriginalMods(veh); // Save the original mods before opening the menu
-        List<int> componentOrder = new List<int>();
-        for (int i = 0; i < 50; i++)
+        List<int> componentOrder;
+        if (!vehicleModOrders.TryGetValue(veh.Model.Hash, out componentOrder))
         {
-            if (i == 14) continue;
-
-            componentOrder.Add(i);
+            componentOrder = Enumerable.Range(0, 50).Where(i => i != 14).ToList(); // default order
         }
 
         List<NativeMenu> submenusList = new List<NativeMenu>();
@@ -654,6 +659,35 @@ public class HaoCustom : Script
                 {
                     case 8:
                         catName = "Mirrors";
+                        break;
+                    default:
+                        catName = parts[i];
+                        break;
+                }
+            }
+
+            else if (veh.Model.Hash == new Model("tampa4").Hash)
+            {
+                switch (i)
+                {
+                    case 8:
+                        catName = "Mirrors";
+                        break;
+                    default:
+                        catName = parts[i];
+                        break;
+                }
+            }
+
+            else if (veh.Model.Hash == new Model("woodlander").Hash)
+            {
+                switch (i)
+                {
+                    case 9:
+                        catName = "Mirrors";
+                        break;
+                    case 10:
+                        catName = "Rear Diffusers";
                         break;
                     default:
                         catName = parts[i];

@@ -75,7 +75,9 @@ public class HSWSP : Script
         new Model("hakuchou2"),
         new Model("deveste"),
         new Model("brioso"), 
-        new Model("feltzer3")
+        new Model("feltzer3"),
+        new Model("tampa4"),
+        new Model("woodlander"),
     };
 
     public static List<Tuple<Vector3, float>> spawnPoints = new List<Tuple<Vector3, float>>()
@@ -105,9 +107,9 @@ public class HSWSP : Script
     Tuple.Create(new Vector3(-2186.972f, 1132.551f, 29.47061f), 90.00497f),
     Tuple.Create(new Vector3(-2186.948f, 1129.097f, 29.47065f), 89.98501f),
     Tuple.Create(new Vector3(-2187.01f, 1125.857f, 29.47066f), 90.00499f),
-    /*/Tuple.Create(new Vector3(-2177.629f, 1094.895f, 28.3651f), -90.006f),
+    Tuple.Create(new Vector3(-2177.629f, 1094.895f, 28.3651f), -90.006f),
     Tuple.Create(new Vector3(-2177.559f, 1087.234f, 27.95241f), -90.07346f),
-    Tuple.Create(new Vector3(-2177.548f, 1084.049f, 27.95219f), -89.94308f),
+    /*/Tuple.Create(new Vector3(-2177.548f, 1084.049f, 27.95219f), -89.94308f),
     Tuple.Create(new Vector3(-2164.692f, 1097.896f, 27.9547f), -90.02538f),
     Tuple.Create(new Vector3(-2164.852f, 1094.665f, 27.95362f), -89.78201f),
     Tuple.Create(new Vector3(-2164.837f, 1086.836f, 27.95459f), -90.00917f),
@@ -367,9 +369,9 @@ public class HSWSP : Script
             car2Hash = vehicleModels[random.Next(vehicleModels.Count)];
         } while (car2Hash == car1Hash);
 
-        hsw_1 = World.CreateVehicle(car1Hash, HSW_Pos_1, HSW_Heading_1);
+        hsw_1 = World.CreateVehicle(new Model("woodlander"), HSW_Pos_1, HSW_Heading_1);
         while (hsw_1 == null) Script.Wait(0);
-        hsw_2 = World.CreateVehicle(car2Hash, HSW_Pos_2, HSW_Heading_2);
+        hsw_2 = World.CreateVehicle(new Model("woodlander"), HSW_Pos_2, HSW_Heading_2);
         while (hsw_2 == null) Script.Wait(0);
 
         ApplyRandomTuning(hsw_1, 1, 1);

@@ -34,7 +34,8 @@
     <Reference Include="LemonUI.SHVDN3">
       <HintPath>D:\Rockstar Games\Grand Theft Auto V\scripts\LemonUI.SHVDN3.dll</HintPath>
     </Reference>
-    <Reference Include="ScriptHookVDotNet3">
+    <Reference Include="ScriptHookVDotNet3, Version=3.7.0.29, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Rockstar Games\Grand Theft Auto V\ScriptHookVDotNet3.dll</HintPath>
     </Reference>
     <Reference Include="System" />
