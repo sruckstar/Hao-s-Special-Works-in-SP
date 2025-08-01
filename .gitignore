@@ -5,3 +5,10 @@ Properties/AssemblyInfo.cs
 *.db-wal
 *.db-shm
 *.db
+/.vs/Hao's Special Works in SP/v17/.suo
+/.vs/Hao's Special Works in SP/v17
+/bin/Release/Hao's Special Works in SP.dll
+/bin/Release/Hao's Special Works in SP.pdb
+/bin/Release/ScriptHookVDotNet3.dll
+/obj/Release/Hao's Special Works in SP.dll
+/obj/Release/Hao's Special Works in SP.pdb
