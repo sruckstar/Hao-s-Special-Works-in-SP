@@ -369,9 +369,9 @@ public class HSWSP : Script
             car2Hash = vehicleModels[random.Next(vehicleModels.Count)];
         } while (car2Hash == car1Hash);
 
-        hsw_1 = World.CreateVehicle(new Model("woodlander"), HSW_Pos_1, HSW_Heading_1);
+        hsw_1 = World.CreateVehicle(car1Hash, HSW_Pos_1, HSW_Heading_1);
         while (hsw_1 == null) Script.Wait(0);
-        hsw_2 = World.CreateVehicle(new Model("woodlander"), HSW_Pos_2, HSW_Heading_2);
+        hsw_2 = World.CreateVehicle(car2Hash, HSW_Pos_2, HSW_Heading_2);
         while (hsw_2 == null) Script.Wait(0);
 
         ApplyRandomTuning(hsw_1, 1, 1);
