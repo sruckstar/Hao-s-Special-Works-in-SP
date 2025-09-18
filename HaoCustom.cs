@@ -154,7 +154,10 @@ public class HaoCustom : Script
         TOP_HSWUPGRADE = Game.GetLocalizedString("TOP_HSWUPGRADE");
 
         pool = new ObjectPool();
-        menu = new NativeMenu("", TOP_HSWUPGRADE, " ", new ScaledTexture(PointF.Empty, new SizeF(0, 108), "shopui_title_los_santos_car_meet", "shopui_title_los_santos_car_meet"));
+
+        string shopui = shopui = "shopui_title_hao";
+
+        menu = new NativeMenu("", TOP_HSWUPGRADE, " ", new ScaledTexture(PointF.Empty, new SizeF(0, 108), shopui, shopui));
         menu.Closed += (sender, e) =>
         {
             checkMenuAfterDelay = true;
@@ -343,7 +346,8 @@ public class HaoCustom : Script
         }
 
         List<NativeMenu> submenusList = new List<NativeMenu>();
-        NativeMenu components = new NativeMenu("", TOP_HSWUPGRADE, " ", new ScaledTexture(PointF.Empty, new SizeF(0, 108), "shopui_title_los_santos_car_meet", "shopui_title_los_santos_car_meet"));
+        string shopui = shopui = "shopui_title_hao";
+        NativeMenu components = new NativeMenu("", TOP_HSWUPGRADE, " ", new ScaledTexture(PointF.Empty, new SizeF(0, 108), shopui, shopui));
 
         int name_index = 0;
         foreach (int i in componentOrder)
@@ -699,6 +703,8 @@ public class HaoCustom : Script
             {
                 catName = parts[i];
             }
+
+
 
             NativeMenu menu = new NativeMenu("", catName, " ", new ScaledTexture(PointF.Empty, new SizeF(0, 108), "shopui_title_los_santos_car_meet", "shopui_title_los_santos_car_meet"));
             menu.CloseOnInvalidClick = false;

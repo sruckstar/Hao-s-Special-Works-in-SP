@@ -1,9 +1,6 @@
 C:\Users\sruck\OneDrive\Документы\GitHub\Hao-s-Special-Works-in-SP\bin\Release\Hao's Special Works in SP.dll
 C:\Users\sruck\OneDrive\Документы\GitHub\Hao-s-Special-Works-in-SP\bin\Release\Hao's Special Works in SP.pdb
-C:\Users\sruck\OneDrive\Документы\GitHub\Hao-s-Special-Works-in-SP\bin\Release\LemonUI.SHVDN3.dll
 C:\Users\sruck\OneDrive\Документы\GitHub\Hao-s-Special-Works-in-SP\bin\Release\ScriptHookVDotNet3.dll
-C:\Users\sruck\OneDrive\Документы\GitHub\Hao-s-Special-Works-in-SP\bin\Release\LemonUI.SHVDN3.pdb
-C:\Users\sruck\OneDrive\Документы\GitHub\Hao-s-Special-Works-in-SP\bin\Release\LemonUI.SHVDN3.xml
 C:\Users\sruck\OneDrive\Документы\GitHub\Hao-s-Special-Works-in-SP\bin\Release\ScriptHookVDotNet3.pdb
 C:\Users\sruck\OneDrive\Документы\GitHub\Hao-s-Special-Works-in-SP\obj\Release\Hao's Special Works in SP.csproj.AssemblyReference.cache
 C:\Users\sruck\OneDrive\Документы\GitHub\Hao-s-Special-Works-in-SP\obj\Release\Hao's Special Works in SP.csproj.CoreCompileInputs.cache

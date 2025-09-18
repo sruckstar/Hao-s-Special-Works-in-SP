@@ -68,7 +68,7 @@ public class HSWSP : Script
         new Model("entity3"),
         new Model("vigero2"),
         new Model("arbitergt"),
-        new Model("arbitergt"), //Ignus2 placeholder
+        new Model("ignus2"),
         new Model("turismo2"),
         new Model("sentinel"), 
         new Model("banshee"),
@@ -369,10 +369,8 @@ public class HSWSP : Script
             car2Hash = vehicleModels[random.Next(vehicleModels.Count)];
         } while (car2Hash == car1Hash);
 
-        hsw_1 = World.CreateVehicle(car1Hash, HSW_Pos_1, HSW_Heading_1);
-        while (hsw_1 == null) Script.Wait(0);
-        hsw_2 = World.CreateVehicle(car2Hash, HSW_Pos_2, HSW_Heading_2);
-        while (hsw_2 == null) Script.Wait(0);
+        hsw_1 = World.CreateVehicle(new Model("ignus2").Hash, HSW_Pos_1, HSW_Heading_1);
+        hsw_2 = World.CreateVehicle(new Model("ignus2").Hash, HSW_Pos_2, HSW_Heading_2);
 
         ApplyRandomTuning(hsw_1, 1, 1);
         ApplyRandomTuning(hsw_2, 1, 2);
